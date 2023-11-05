@@ -6,3 +6,5 @@ The group member are as follows:
 * Prabhjot Singh
 * Siya Khanna
 * Prince Prince
+
+### Robin - MS2: Everyone should try to commit to GitHub. The project needs to be compiled.
