@@ -1,0 +1,35 @@
+/*
+* double truckLoad(struct Truck* truck);
+* To get the the truck's total capacity to store load.
+* @param truck - the truck you wanted to know load capacity
+* @returns - the weight capacity of the truck.
+*/
+
+// It returns an integer value that represents the remaining size
+// of the truck that can be loaded with goods.
+int truckRemainingSize(int fullSize, int loadedSize);
+
+/**
+ * Calculates the total load size of a truck, given its capacity and the size of the load already in it.
+ * @param truckCapacity The capacity of the truck in tons.
+ * @param loadSize The size of the load already in the truck in tons.
+ * @return The total load size of the truck in tons.
+ */
+ 
+ int shipmentSize();//returns the size of the shipment
+ 
+ /**
+Calculate the total weight of shipments for a truck.
+@param shipments - the array of shipment structs containing shipment details (item name, quantity, weight).
+@param quantities - an array with the quantity for each shipment in the array.
+@param weights - an array of weights of each shipment of type double.
+@returns the total weight of the shipment as a float.
+*/
+
+/**
+* This function receives a pointer to a constant struct called truckInfo. 
+* The function returns the capacity of the truck (either weight or size). 
+* The function shows an error message if the pointer is NULL or if the value of weight or size is less than 0 or invalid.
+* @param truck - pointer to a constant truckInfo struct
+* @return float - the capacity of the truck (either weight or size)
+*/
