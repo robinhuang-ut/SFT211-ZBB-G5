@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Starting test runner..."
+
+# Update this line with the appropriate command to run your C tests
+test_command="./test_suite"
+
+# Run the tests and capture the output
+test_output=$($test_command)
+
+# Check if the test output contains the failure string
+failure_string="FAIL"
+if [[ $test_output == *"$failure_string"* ]]; then
+  echo >&2 "Tests are not passing! Push aborted!"
+  exit 1
+fi
+
+echo >&2 "All tests run successfully."
+exit 0
