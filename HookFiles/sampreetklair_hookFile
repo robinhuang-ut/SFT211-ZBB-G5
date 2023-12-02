@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Starting test runner..."
+
+test_runner="C:/sampreetklair/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe"
+
+tests_dll="/Users/sampreetklair/Documents/Seneca/semester2/SFT221-ZDD/SFT211 Group 5.dll"
+
+failure_string="Failed:"
+testout=$("$test_runner" "$tests_dll")
+
+if [[ $testout == *"$failure_string"* ]]; then
+    echo >&2 "Unit tests are not passing! Push aborted!"
+    exit 1
+fi
+
+echo >&2 "All tests run successfully."
+exit 0
